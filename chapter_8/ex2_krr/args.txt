@@ -1,0 +1,15 @@
+1 Change GridSearchCV to RandomizedSearchCV to get the argument values nearer to the optimum.
+
+2 Data preprocessing (the function is symmetrical on the y-Axis (x==0))
+-> flip data (y-axis) to double input size for ML model
+-> Other data preprocessing steps would be possible: e.g. add noise to further increase input size
+
+3 The function is known:
+-> this enables
+    data enhancement(e.g. remove outliers)
+    new data creation (random data points on function curve w/o noise)
+
+4 Limitations
+    (1) This does not guarantee to get the best results, however, a wider range of variables can be faster tested.
+    (2) The assumption for a symmetrical target function must be true (but can be checked in the noisy dataset without knowing the target function)
+    (3) Only works if the target function is known, which makes a fitting to noisy data points unnecessary.
